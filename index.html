@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+</head>
+<body>
+    <header class="tittle">
+        Blackjack
+    </header>
+
+    <div class="controls">
+        <div class="controls-container">
+            <button id="btnNew" class="controls__button controls__button--red flex-row-center">
+                <span class="material-icons">restart_alt</span>
+                Nuevo juego
+            </button>
+            <button id="btnGet" class="controls__button flex-row-center">
+                <span class="material-icons">
+                    play_arrow
+                </span>
+                Pedir carta
+            </button>
+            <button id="btnStop" class="controls__button flex-row-center">
+                <span class="material-icons">
+                    pause
+                </span>
+                Detener
+            </button>
+        </div>
+    </div>
+
+    <div class="player">
+        <div class="player-container">
+            <h2 class="player__name">Jugador 1 - <small>0</small></h2>
+            <div id="player-cards">
+                <!-- <img class="playing-card" src="./assets/cartas/10C.png" alt=""> -->
+            </div>
+
+        </div>
+    </div>
+
+    <div class="player">
+        <div class="player-container">
+    
+            <h2 class="player__name">Computadora - <small>0</small></h2>
+            <div id="computer-cards">
+                <!-- <img class="playing-card" src="./assets/cartas/2H.png" alt=""> -->
+            </div>
+    
+        </div>
+    </div>
+    
+    <script src="./assets/js/underscore-min.js"></script>
+    <script src="./assets/js/game.js"></script>
+    
+</body>
+</html>

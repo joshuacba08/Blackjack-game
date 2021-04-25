@@ -1,0 +1,109 @@
+:root {
+    /*fuentes
+    Poppins:wght@300;400;500;600;700;800
+    Raleway:ital,200;0,300;0,400;0,500;1,200;1,300;1,400
+    */
+    --poppins: 'Poppins', sans-serif;
+    --raleway: 'Raleway', sans-serif;
+    /*colores*/
+    --just-white: white;
+    --black-text: #1c1c1c;
+    --green-table: #2f4f30;
+    --red-casino: #6E0D25;
+    --bole: #663E30;
+    --yellow-crayola: #D4E09B;
+    --blue-dark-sky: #93B7BE;
+    --blue-600: #2563EB;
+    --green-600: #059669;
+    --red-600: #DC2626;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: var(--green-table);
+    color: white;
+    font-family: var(--poppins);
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.flex-row-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tittle {
+    text-align: center;
+    background-color: var(--black-text);
+    color: white;
+    padding: 20px;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.controls {
+    width: 100%;
+    padding: 20px;
+}
+
+.controls-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.controls__button {
+    min-width: 6.4rem;
+    padding: 0 1.6rem;
+    height: 3.6rem;
+    margin: 5px 5px;
+    border-radius: 5px;
+    border: none;
+    color: var(--just-white);
+    background-color: var(--blue-600);
+    font-family: var(--poppins);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.controls__button--red {
+    background-color: var(--red-600);
+    padding: 0 1.6rem 0 1.2rem;
+}
+
+button[disabled] {
+    opacity: 70%;
+}
+
+.player__name {
+    padding: 10px;
+}
+
+.playing-card {
+    position: relative;
+    width: 120px;
+    left: 100px;
+    margin-left: -75px;
+}
+
+#computer-cards, #player-cards {
+    height: 200px;
+}
